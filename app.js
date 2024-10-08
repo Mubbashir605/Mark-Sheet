@@ -71,7 +71,7 @@ function percentage() {
       subName.innerText = "URDU";
       tableCol1.innerText = 100;
       tableCol2.innerText = userInp3;
-      var userInp4 = Number(prompt("Enter your English Marks \n Out of 75"));
+      var userInp4 = Number(prompt("Enter your English Marks \n Out of 100"));
       obtainedMarks += userInp3;
     } else if (count === 6) {
       subName.innerText = "ENGLISH";
