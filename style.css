@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width:  100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#87CEEB,#4682B4);
+    font-family: 'Arial', sans-serif;
+    padding: 10px; 
+  }
+  h1{
+    color: black;
+    padding: 20px;
+  }
+  .table, .grade {
+    border: none;
+    width: 300px; 
+    max-width: 50%; 
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    font-size: large;
+    padding: 20px; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grade {
+    margin-top: 20px;
+  }
+  
+  .col1 {
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  
+  .num {
+    font-weight: 600;
+    color: blueviolet;
+    font-size: 1.5em;
+  }
+
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th, td {
+    border: 1px solid black; 
+    padding: 8px;
+  }
+  
+  
+  .grade{
+    border-collapse: collapse;
+  }
+  .grade th, .grade td{
+    border: none; 
+  }
+
+.table td {
+    padding: 10px; 
+    line-height: 1.5; 
+  }
+  .table tr{
+    text-align: center;
+  }
+  .table td[colspan="3"] {
+    font-weight: normal;
+    font-size: 1em; 
+  }
+  #red{
+    color: red;
+  }
+  #green{
+    color: green;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .table, .grade {
+      width: 80%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .table, .grade {
+      width: 80%; 
+      padding: 15px; 
+    }
+  
+    .col1, .num {
+      font-size: 1em; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .table, .grade {
+      width: 90%;
+      padding: 10px;
+    }
+    .col1 {
+      font-size: 0.9em; 
+    }
+    .num {
+      font-size: 1.2em; 
+    }
+  }
+  
